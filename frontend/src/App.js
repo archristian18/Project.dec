@@ -1,23 +1,26 @@
 import React from 'react';
-import { Rightbar } from './components/Rightbar';
-import { Sidebar } from './components/Sidebar';
-import { Feed } from './components/Feed';
+import { Rightbar } from './components/Rightbar/Rightbar';
+import { Sidebar } from './components/Sidebar/Sidebar';
+import { Feed } from './components/Feed/Feed';
 import { Grid } from '@mui/material';
+import useStyles from './style'
 
 function App() {
 
+  const classes = useStyles()
+
     return (
-      <Grid container l={12} spacing={2} sx={{backgroundColor: 'red'}}>
-        <Grid item md={4} spacing={2} sx={{backgroundColor: 'green'}}>
+      <Grid container spacing={3} className={classes.container}>
+        <Grid item xs className={classes.Sidebar}>
           <Sidebar />
         </Grid>
-        <Grid item md={4} spacing={2} sx={{backgroundColor: 'yellow'}}>
+        <Grid item xs className={classes.Feed}>
           <Feed />
         </Grid>
-        <Grid item md={4} spacing={2} sx={{backgroundColor: 'blue'}}>
+        <Grid item xs className={classes.Rightbar}>
           <Rightbar />
         </Grid>
-      </Grid>  
+      </Grid>
     );
 }
 
