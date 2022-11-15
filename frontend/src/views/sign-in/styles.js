@@ -1,11 +1,7 @@
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(() => ({
-    root: {
-        position: 'relative',
-        margin: 'auto',
-        border: '3px solid #73AD21',
-    },
+
 
     TextField: {
         padding: 20,

@@ -2,8 +2,16 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(() => ({
 
-container: {
-    marginTop: 10,
+AppBar: {
+    position: 'sticky',
+},
+
+ToolBar: {
+    justifyContent: 'space-between',
+},
+
+textNavBar: {
+
 }
 
 }))
